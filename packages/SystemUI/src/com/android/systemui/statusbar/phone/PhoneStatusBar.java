@@ -457,11 +457,9 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
             mAutomaticBrightness = mode != Settings.System.SCREEN_BRIGHTNESS_MODE_MANUAL;
             mBrightnessControl = Settings.System.getInt(
                     resolver, Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, 0) == 1;
-<<<<<<< HEAD
             mShowStatusBarCarrier = Settings.System.getIntForUser(resolver,
                 Settings.System.STATUS_BAR_CARRIER, 0, mCurrentUserId) == 1;
             showStatusBarCarrierLabel(mShowStatusBarCarrier);
-=======
 
             if (mNavigationBarView != null) {
                 boolean navLeftInLandscape = Settings.System.getInt(resolver,
@@ -507,7 +505,6 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
             mBatteryView.setShowPercent(showInsidePercent);
             //mBatteryTextView.setShowPercent(showNextPercent);
 */
->>>>>>> 7dbf5dd2760edf0e7a40034eb592ef0702b5e80f
         }
     }
 
